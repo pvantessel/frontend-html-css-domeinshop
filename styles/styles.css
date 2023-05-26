@@ -1,7 +1,7 @@
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
-    2. Typografie
+    2. Typography
     3. Areas
         3.1 Header
         3.2 Testimonial
@@ -10,40 +10,237 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1C2B32;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+}
 
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+a,
+a:visited {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
-
-
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: top;
+}
 
+.header-content {
+    max-width: 1000px;
+    text-align: center;
+    padding: 150px 0 400px 0;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header-input-text {
+    color: #1C2B32;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 2px solid #1C2B32;
+    border-radius: 50px 0 0 50px;
+    padding: 16px 32px;
+    margin-top: 32px;
+    width: 350px;
+}
+
+.header-input-text:hover {
+    cursor: pointer;
+}
+
+.header-input-text::placeholder {
+    color: #1C2B32;
+    font-size: 16px;
+}
+
+.header-input-button {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+    border-radius: 0 50px 50px 0;
+    padding: 16px 32px;
+    margin-left: -5px;
+}
+
+.header-input-button:hover {
+    cursor: pointer;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.reviews-section {
+    margin: 40px 0;
+}
 
+.review-article {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    border-radius: 10px;
+    padding: 30px 75px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.review-detail-text {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 40px;
+}
+
+.review-detail-name {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 10px 10px 25px;
+    font-style: italic;
+}
+
+.avatar-img {
+    width: 44px;
+    height: 44px;
+}
+
+.name-block {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 40px;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 75px;
+    top: 28px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.section-support {
+    margin: 40px 0;
+}
 
+.support-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.support-info {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.support-button {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+    border-radius: 50px;
+    outline: none;
+    padding: 16px 32px;
+}
+
+.support-button:hover {
+    cursor: pointer;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.section-faq {
+    margin: 40px 0;
+}
 
+.faq-details {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.faq-details:hover {
+    cursor: pointer;
+
+}
+
+.border-class {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #899CA0;
+    background-color: #899CA0;
+    border-radius: 10px;
+    margin: 16px 0 0 32px;
+    padding: 16px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.footer {
+    background-color: #1C2B32;
+    padding: 25px 0 25px 0;
+}
+
+.footer-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
